@@ -1,0 +1,294 @@
+/*Global specifications*/
+body{
+    background-color:#ffffff;
+    font:18px/25px "Montserrat",Helvetica;
+    padding:0;
+    margin: 0;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+}
+
+h2{
+    font-size: 50px;
+}
+
+/*navigation bar and start of the webpage*/
+header{      
+    padding-top:30px;
+    min-height:70px;
+}
+
+header a{
+    color:#732092;
+    text-decoration:none;
+    font-size:16px;
+    text-transform: uppercase;    
+}
+
+header a:hover{
+    font-weight: bold;
+    font-size:17px;
+}
+
+header ul{
+    margin:0;
+    padding:0;    
+}
+
+header li{    
+    display:block;
+    padding:5px;
+}
+
+/*name presentation */
+
+#presentation{
+    text-align: right;
+    min-height: 200px;
+    margin-top:20px;
+    margin-bottom:20px;
+    padding-bottom:50px;
+}
+
+#presentation h1{
+    font-size: 150px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 100%;
+    margin-top:10px;
+    color:#732092;
+}
+
+#presentation p{
+    font-size:2vw;
+    text-transform:uppercase;
+    color:732092;
+}
+
+#aboutme{
+    padding-bottom: 100px;
+
+}
+
+#aboutme .elementaboutme{
+    width:50%;
+    float:left;
+    text-align: center;
+    margin-top:50px;
+    padding-top:50px;
+    
+}
+
+#aboutme .elementaboutme img{
+    width:450px;
+    height:600px;
+    margin-left:50px; 
+    
+}
+
+.elementaboutme h2{
+    /*font-size: 50px;*/
+    text-transform: uppercase;
+    padding:10px;
+}
+
+.elementaboutme p{
+    padding:10px;
+    background-color:rgba(255,201,115,0.8);
+}
+
+#mywork{
+    margin-top:50px;
+}
+#mywork .titlesection{
+    text-align: center;
+    padding:20px;
+    text-transform: uppercase;
+    margin:10px;
+    /*font-size: 30px;*/
+}
+
+#mywork .col{
+    width:40%;
+    margin-left:80px;
+    float:left; 
+}
+
+#mywork .gallery img{
+    width:100%;    
+    height:auto;
+    vertical-align: middle;
+}
+
+#mywork .gallery video{
+    width:100%;
+    height:auto;
+    vertical-align:middle;
+}
+
+#mywork .gallery .description{
+    box-sizing: border-box;
+    position:absolute;
+    text-align: center;
+    bottom:0;
+    padding:5px;
+    width:100%;
+    background-color:rgba(255,227,179,0.5); 
+    opacity: 0;      
+}
+
+#mywork .gallery:hover .description{
+    transition: .5s ease;
+    opacity:1;
+}
+
+#mywork .gallery{
+    background-color:black;
+    box-sizing: border-box;
+    width:100%;
+    margin-bottom:20px;
+    text-align: center;
+    position:relative;
+}
+
+#contactar{
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+#contactar .container{
+    text-align: center;
+    padding-top:50px;
+    height:500px;
+}
+
+#contactar .container h2{
+    /*font-size: 50px;*/
+    text-transform: uppercase;
+}
+
+#contactar .container p{
+    font-size: 25px;
+}
+
+#contactar  button{
+    background-color:rgba(255,201,115,0.8);
+    color:black;
+    border:none;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-size:18px;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+#contactar button:hover{
+    background-color:rgba(255,201,115,1);
+}
+
+#contactar button:active{
+    font-size:16px;
+}
+
+#contactar .contUpBtn{
+    width:80%;
+    margin:0,auto;
+    margin-bottom: 30px;
+    overflow:hidden;
+}
+
+#contactar .contUpBtn #up{
+    float: right;
+    font-size: 14px;
+}
+
+footer{
+    background-color:rgba(115,32,146,0.7);
+    box-sizing: border-box;
+}
+
+footer .container{
+    text-align: center;      
+}
+
+footer a img{
+    width:2%;
+    height:auto;
+    cursor: pointer;
+}
+
+footer ul{
+    display:inline-block;
+    margin:0;
+    padding:0 10px;
+    list-style-type: none;    
+}
+
+footer li{    
+    display:inline;
+    padding:5px;
+}
+
+
+
+
+/*media queries*/
+@media(max-width:768px){
+    header nav,
+    header nav li,
+    #aboutme .elementaboutme{
+        float: none;
+        text-align: center;
+        width:100%;        
+    }
+
+    header a{
+        font-size:6vw;
+    }
+
+    #presentation h1{
+        font-size: 24vw;
+        word-wrap: break-word;
+        line-height: 110%;
+        margin-top: 0;
+        margin-bottom:0;
+
+    }
+
+    #presentation p{
+        font-size:5vw;
+        text-align:center;
+        margin-top:0;
+        line-height: 90%;
+    }
+
+    #aboutme .elementaboutme img{
+        width:100%;
+        height:auto;
+        margin-left:0;
+
+    }
+
+    #aboutme .elementaboutme p{
+        font-size:4vw;
+        line-height: 110%;
+    }
+
+    #aboutme .elementaboutme h2{
+        font-size: 6vw;
+    }
+
+    #mywork .col{
+        width:100%;
+        float: none;
+        margin-left:0;
+    }
+
+
+}
+
